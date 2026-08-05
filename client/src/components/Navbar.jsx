@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { motion } from "motion/react"
-import { BsRobot, BsCoin } from "react-icons/bs";
+import { LiaInfinitySolid } from 'react-icons/lia';
+import { BsCoin } from "react-icons/bs";
 import { HiOutlineLogout } from "react-icons/hi";
 import { FaUserAstronaut } from "react-icons/fa";
 import { useState } from 'react';
@@ -37,12 +38,9 @@ function Navbar() {
         animate={{opacity:1 , y:0}}
         transition={{duration: 0.3}}
         className='w-full max-w-6xl bg-white rounded-[24px] shadow-sm border border-gray-200 px-8 py-4 flex justify-between items-center relative'>
-            <div className='flex items-center gap-3 cursor-pointer'>
-                <div className='bg-black text-white p-2 rounded-lg'>
-                    <BsRobot size={18}/>
-
-                </div>
-                <h1 className='font-semibold hidden md:block text-lg'>InterviewIQ.AI</h1>
+            <div className='flex items-center gap-1 cursor-pointer'>
+                <LiaInfinitySolid size={34} className='text-green-600' />
+                <h1 className='font-extrabold hidden md:block text-2xl glow-text'>Oris Ai</h1>
             </div>
 
             <div className='flex items-center gap-6  relative'>
@@ -62,7 +60,7 @@ function Navbar() {
                     {showCreditPopup && (
                         <div className='absolute right-[-50px] mt-3 w-64 bg-white shadow-xl border border-gray-200 rounded-xl p-5 z-50'>
                             <p className='text-sm text-gray-600 mb-4'>Need more credits to continue interviews?</p>
-                            <button onClick={()=>navigate("/pricing")} className='w-full bg-black text-white py-2 rounded-lg text-sm'>Buy more credits</button>
+                            <button onClick={()=>navigate("/pricing")} className='w-full bg-green-600 text-white py-2 rounded-lg text-sm'>Buy more credits</button>
 
                         </div>
                     )}

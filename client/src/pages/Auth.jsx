@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BsRobot } from "react-icons/bs";
+import { LiaInfinitySolid } from 'react-icons/lia';
 import { IoSparkles } from "react-icons/io5";
 import { motion } from "motion/react"
 import { FcGoogle } from "react-icons/fc";
@@ -65,12 +65,9 @@ function Auth({isModel = false}) {
         ${isModel ? "max-w-md p-8 rounded-3xl" : "max-w-lg p-12 rounded-[32px]"}
         bg-white shadow-2xl border border-gray-200
       `}>
-            <div className='flex items-center justify-center gap-3 mb-6'>
-                <div className='bg-black text-white p-2 rounded-lg'>
-                    <BsRobot size={18}/>
-
-                </div>
-                <h2 className='font-semibold text-lg'>InterviewIQ.AI</h2>
+            <div className='flex items-center justify-center gap-1 mb-6'>
+                <LiaInfinitySolid size={34} className='text-green-600' />
+                <h2 className='font-extrabold text-2xl glow-text'>Oris Ai</h2>
             </div>
 
             <h1 className='text-2xl md:text-3xl font-semibold text-center leading-snug mb-4'>
