@@ -11,7 +11,7 @@ import InterviewHistory from './pages/InterviewHistory'
 import Pricing from './pages/Pricing'
 import InterviewReport from './pages/InterviewReport'
 
-export const ServerUrl = "https://mern-based-ai-interview-app.onrender.com"
+export const ServerUrl = "https://mern-based-ai-interview-app-new.onrender.com"
 
 function App() {
 
