@@ -15,6 +15,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://mern-based-ai-interview-puuo3350r-lakshyas-projects-6bb99c29.vercel.app",
+      "https://mern-based-ai-interview-app.vercel.app"
     ],
     credentials: true,
   })
